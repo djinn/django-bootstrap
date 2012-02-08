@@ -15,7 +15,7 @@ Installation
 Usage
 -----
     from bootstrap.forms import BootstrapForm, Fieldset
-
+    from django import forms
     class LoginForm(BootstrapForm):
         class Meta:
             layout = (
@@ -34,6 +34,7 @@ Template Usage
         {{ form }}
         <div class="form-actions">
             <button type="submit" class="btn btn-primary">Login</button>
+            <button type="cancel" class="btn btn-secondary">Or Signup Now</button>
         </div>
     </form>
 
